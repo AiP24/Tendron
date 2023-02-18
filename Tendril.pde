@@ -25,6 +25,7 @@ class Tendril
     int startY = y;
     int endX;
     int endY;
+    strokeWeight(segments/SEG_LENGTH);
     for (int i=0; i<segments;i++) {
         angle += Math.random() * 0.4 - 0.2;
         endX = startX+(int)(SEG_LENGTH*Math.cos(angle));
